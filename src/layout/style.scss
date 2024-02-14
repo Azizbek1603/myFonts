@@ -1,0 +1,32 @@
+.font-family{
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 10px 30px;
+    // border-bottom: 1px solid #808080;
+    overflow: hidden;
+    flex-direction: column;
+    &__header{
+        display: flex;
+        gap: 0 10px;
+        color: #2b2828;
+    }
+    h2{
+        width: 120000%;
+        color: #171717;        
+    }
+    &:hover{
+        background-color: #e7e2e2;
+    }
+    &:hover hr{
+        background: transparent;
+    }
+    hr{
+        border: none;
+        height: 1px;
+        background-color: gray;
+    }
+}

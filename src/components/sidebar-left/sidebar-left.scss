@@ -1,0 +1,108 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100dvh;
+    position: absolute;
+    position: fixed;
+    gap: 30px;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding: 10px;
+    background-color: #fff;
+    .reset{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        align-items: start;
+        gap: 10px;
+        p{
+            color: #0000ff;
+            display: flex;
+            width: 120px;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            &:hover{
+                background-color: aliceblue;
+            }
+        }
+        .svg-close{
+            font-size: 25px;
+            color: gray;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(201, 200, 200);
+                color: #0000ff;
+            }
+        }
+    }
+    .preview{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 20px;
+        textarea{
+            resize: none;
+            width: 100%;
+            aspect-ratio: 2 / 1;
+            background-color: #bebee6;
+            padding: 10px;
+            color: #0000ff;
+            outline: none;
+            font-family: sans-serif;
+            border-radius: 10px;
+        }
+    }
+    .filter{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .decorative{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            h3{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                gap: 20px;
+            }
+            .radio{
+                display: flex;
+                align-items: center;
+                padding: 0 5px;
+                gap: 10px;
+                border-radius: 5px;
+                height: 30px;
+                // width: 100px;
+                background-color: #cdcde3;
+            }
+        }
+        .properties{
+            display: flex;
+            flex-direction: column;
+            height: 100px;
+            gap: 15px;
+            h3{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+            div{
+                display: flex;
+                align-items: center;
+                gap: 0 5px;
+            }
+        }
+    }
+}
